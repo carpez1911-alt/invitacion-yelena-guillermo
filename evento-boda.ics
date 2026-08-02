@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Invitacion Yelena y Guillermo//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:yelena-guillermo-20260926@invitacion.local
+DTSTAMP:20260802T001800Z
+DTSTART;TZID=America/Santiago:20260926T130000
+SUMMARY:Matrimonio de Yelena y Guillermo
+DESCRIPTION:Celebración del matrimonio de Yelena y Guillermo. Código de vestimenta: formal. El color blanco está reservado.
+LOCATION:Campo Los Nogales, E-411, Los Copihues, Putaendo, Valparaíso
+URL:https://maps.app.goo.gl/89GMy5z469c1Z2PCA?g_st=awb
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

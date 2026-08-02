@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#7a5b42">
+    <meta name="description" content="Invitación al matrimonio de Yelena y Guillermo, 26 de septiembre de 2026.">
+    <meta property="og:title" content="Yelena &amp; Guillermo | Nuestra boda">
+    <meta property="og:description" content="Acompáñanos el 26 de septiembre de 2026 en Campo Los Nogales.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    <title>Yelena & Guillermo | Nuestra boda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cover-visible">
+    <noscript>
+        <p class="noscript">Activa JavaScript para abrir la invitación, escuchar la música y confirmar tu asistencia.</p>
+    </noscript>
+
+    <!-- PORTADA: desaparece completamente al abrir la invitación -->
+    <header class="cover" id="cover" aria-label="Portada de la invitación">
+        <img class="cover__image" src="imagenes/portada.jpg" alt="Yelena y Guillermo celebrando su matrimonio" fetchpriority="high">
+        <div class="cover__shade" aria-hidden="true"></div>
+        <div class="cover__content">
+            <p class="eyebrow eyebrow--light">Tienes una invitación especial</p>
+            <h1 class="cover__names">Yelena <span>&</span> Guillermo</h1>
+            <p class="cover__date">26 · septiembre · 2026</p>
+            <button class="button button--light" id="open-invitation" type="button">
+                <span>Abrir invitación</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <p class="cover__hint">Toca para abrir y escuchar nuestra canción</p>
+        </div>
+    </header>
+
+    <main class="invitation" id="invitation" aria-hidden="true" tabindex="-1">
+        <section class="hero section section--paper" aria-labelledby="main-title">
+            <div class="ornament" aria-hidden="true">❦</div>
+            <p class="eyebrow">Nos casamos</p>
+            <h2 class="display-title" id="main-title">Yelena <span>&</span> Guillermo</h2>
+            <p class="lead">Con mucha alegría queremos compartir contigo uno de los días más importantes de nuestra vida.</p>
+            <div class="date-lockup" aria-label="Sábado 26 de septiembre de 2026 a las 13 horas">
+                <span>Sábado</span>
+                <strong>26</strong>
+                <span>Septiembre · 2026</span>
+                <small>13:00 horas</small>
+            </div>
+        </section>
+
+        <section class="section section--sand reveal" aria-labelledby="countdown-title">
+            <p class="eyebrow" id="countdown-title">Cada vez falta menos</p>
+            <div class="countdown" id="countdown" role="timer" aria-live="polite">
+                <div><strong id="days">00</strong><span>Días</span></div>
+                <div><strong id="hours">00</strong><span>Horas</span></div>
+                <div><strong id="minutes">00</strong><span>Minutos</span></div>
+                <div><strong id="seconds">00</strong><span>Segundos</span></div>
+            </div>
+            <p class="countdown__message" id="countdown-message"></p>
+        </section>
+
+        <section class="section section--paper reveal" aria-labelledby="event-title">
+            <p class="eyebrow">Ceremonia y celebración</p>
+            <h2 class="section-title" id="event-title">Campo Los Nogales</h2>
+
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+                    </span>
+                    <h3>Fecha</h3>
+                    <p>26 de septiembre de 2026</p>
+                    <p>13:00 horas</p>
+                </article>
+
+                <article class="detail-card">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                    </span>
+                    <h3>Lugar</h3>
+                    <p>Campo Los Nogales</p>
+                    <p>E-411, Los Copihues, Putaendo, Valparaíso</p>
+                </article>
+            </div>
+
+            <div class="button-row">
+                <a class="button button--primary" href="https://maps.app.goo.gl/89GMy5z469c1Z2PCA?g_st=awb" target="_blank" rel="noopener noreferrer">
+                    <span>Ver ubicación</span>
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3h7v7M10 14 21 3M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg>
+                </a>
+                <a class="button button--outline" href="evento-boda.ics" download>
+                    <span>Guardar fecha</span>
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M12 13v5M9.5 15.5h5"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="section section--photo reveal" aria-labelledby="gallery-title">
+            <div class="section-heading section-heading--light">
+                <p class="eyebrow eyebrow--light">Nuestra historia</p>
+                <h2 class="section-title" id="gallery-title">Momentos que atesoramos</h2>
+            </div>
+
+            <div class="carousel" id="carousel" aria-roledescription="carrusel" aria-label="Galería de fotografías de Yelena y Guillermo">
+                <div class="carousel__viewport">
+                    <div class="carousel__track" id="carousel-track">
+                        <figure class="carousel__slide" aria-label="Fotografía 1 de 3">
+                            <img src="imagenes/foto1.jpeg" alt="Yelena y Guillermo juntos en un paisaje de montaña" loading="eager">
+                        </figure>
+                        <figure class="carousel__slide" aria-label="Fotografía 2 de 3">
+                            <img src="imagenes/foto2.jpeg" alt="Yelena y Guillermo sentados juntos en un campo" loading="lazy">
+                        </figure>
+                        <figure class="carousel__slide" aria-label="Fotografía 3 de 3">
+                            <img src="imagenes/foto3.jpeg" alt="Yelena y Guillermo compartiendo un momento en la naturaleza" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+
+                <button class="carousel__button carousel__button--prev" type="button" aria-label="Fotografía anterior">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="carousel__button carousel__button--next" type="button" aria-label="Fotografía siguiente">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+                <div class="carousel__dots" id="carousel-dots" aria-label="Seleccionar fotografía"></div>
+            </div>
+        </section>
+
+        <section class="section section--paper reveal" aria-labelledby="details-title">
+            <p class="eyebrow">Detalles importantes</p>
+            <h2 class="section-title" id="details-title">Para celebrar juntos</h2>
+
+            <div class="info-cards">
+                <article class="info-card">
+                    <span class="info-card__mark" aria-hidden="true">01</span>
+                    <h3>Código de vestimenta</h3>
+                    <p><strong>Formal.</strong> El color blanco está reservado; agradecemos evitarlo tanto en hombres como en mujeres.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="info-card__mark" aria-hidden="true">02</span>
+                    <h3>Lluvia de sobres</h3>
+                    <p>Tu presencia es nuestro mejor regalo. Para quienes deseen tener un detalle con nosotros, contaremos con lluvia de sobres.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--verse reveal" aria-labelledby="verse-title">
+            <div class="ornament ornament--light" aria-hidden="true">❦</div>
+            <p class="eyebrow eyebrow--light">Nuestra inspiración</p>
+            <h2 class="verse" id="verse-title">“Una cuerda de tres hilos no se rompe fácilmente.”</h2>
+            <p class="verse-reference">Eclesiastés 4:12</p>
+            <div class="divider divider--light" aria-hidden="true"></div>
+            <p class="verse verse--small">“Sobre todo, vístanse de amor, que es el vínculo perfecto.”</p>
+            <p class="verse-reference">Colosenses 3:14</p>
+        </section>
+
+        <section class="section section--sand reveal rsvp" aria-labelledby="rsvp-title">
+            <p class="eyebrow">Confirma tu asistencia</p>
+            <h2 class="section-title" id="rsvp-title">¿Nos acompañas?</h2>
+            <p class="lead">Nos encantará contar contigo. Pulsa el botón para ingresar tus datos y enviar la confirmación por WhatsApp.</p>
+            <button class="button button--primary button--large" id="open-rsvp" type="button">Confirmar asistencia</button>
+        </section>
+
+        <footer class="footer">
+            <p>Con cariño,</p>
+            <strong>Yelena & Guillermo</strong>
+            <span>26 · 09 · 2026</span>
+        </footer>
+    </main>
+
+    <!-- Control de música visible después de abrir -->
+    <audio id="wedding-song" src="cancion.mp3" preload="auto" loop></audio>
+    <button class="music-control" id="music-control" type="button" aria-label="Pausar música" hidden>
+        <svg class="music-control__playing" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>
+        <svg class="music-control__paused" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/><path d="m4 4 16 16"/></svg>
+    </button>
+
+    <!-- Formulario de confirmación -->
+    <dialog class="rsvp-dialog" id="rsvp-dialog" aria-labelledby="dialog-title">
+        <form class="rsvp-form" id="rsvp-form" method="dialog">
+            <button class="dialog-close" id="close-rsvp" type="button" aria-label="Cerrar formulario">×</button>
+            <p class="eyebrow">R.S.V.P.</p>
+            <h2 class="section-title" id="dialog-title">Confirma tu asistencia</h2>
+            <p class="form-intro">Completa tus datos. Al enviar, se abrirá WhatsApp con tu mensaje preparado.</p>
+
+            <div class="form-grid">
+                <label>
+                    <span>Nombre</span>
+                    <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+                </label>
+                <label>
+                    <span>Apellido</span>
+                    <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+                </label>
+            </div>
+
+            <label>
+                <span>¿Podrás acompañarnos?</span>
+                <select id="attendance" name="attendance" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="Sí, asistiré">Sí, asistiré</option>
+                    <option value="No podré asistir">No podré asistir</option>
+                </select>
+            </label>
+
+            <label id="guest-count-field" hidden>
+                <span>Número de asistentes</span>
+                <input type="number" id="guest-count" name="guestCount" min="1" max="10" value="1" inputmode="numeric">
+            </label>
+
+            <label>
+                <span>Mensaje para los novios <small>(opcional)</small></span>
+                <textarea id="guest-message" name="guestMessage" rows="3" maxlength="220" placeholder="Escribe un mensaje..."></textarea>
+            </label>
+
+            <button class="button button--whatsapp button--large" type="submit">
+                Enviar por WhatsApp
+            </button>
+            <p class="form-note">Tu información no se almacena en esta página.</p>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
