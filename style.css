@@ -896,3 +896,9 @@ svg {
         transform: none;
     }
 }
+
+@media (max-width: 768px) {
+    .verse {
+        margin-top: 110px;
+    }
+}
